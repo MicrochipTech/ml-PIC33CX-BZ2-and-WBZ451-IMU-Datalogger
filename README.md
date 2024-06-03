@@ -14,7 +14,7 @@ This repository contains firmware for streaming up to 3-axes IMU data over UART 
 
 ## Hardware Used
 
-* DSPIC33CK CURIOSITY DEVELOPMENT BOARD [(DM330030)](https://www.microchip.com/en-us/development-tool/dm330030)
+* PIC32CX-BZ2 and WBZ451 Curiosity Development Board [(DM330030)](https://www.microchip.com/en-us/development-tool/ev96b94a)
 
 * [IMU 2 click board](https://www.mikroe.com/6dof-imu-2-click)
 * [IMU 14 click board](https://www.mikroe.com/6dof-imu-14-click)
