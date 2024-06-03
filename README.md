@@ -44,7 +44,7 @@ The steps below explain the process of configuring the data logger firmware buil
    | :--: |
    | *MPLAB X Project Configuration Selection* |
 
-5. Modify high level sensor parameters like sample rate (`SNSR_SAMPLE_RATE`), by changing the macro values defined in `app_config.h`. See the inline comments for further description.
+5. Modify high-level sensor parameters like sample rate (`SNSR_SAMPLE_RATE`), by changing the macro values defined in `app_config.h`. See the inline comments for further description.
 
 6. Once you're satistfied with your configuration, click the *Make and Program Device* button in the toolbar (see image below for reference).
    | ![make and program device](images/program-device.png) |
@@ -59,14 +59,6 @@ The data streamer firmware will output sensor data over the UART port with the f
 * Stop bits 1
 * Parity None
 
-In addition, the onboard LED3 will indicate firmware status as summarized in the table below:
-
-| State |	LED Behavior |	Description |
-| --- | --- | --- |
-| Streaming |	LED3 (GREEN) blink |	Data is streaming. |
-| Error |	LED3 (RED) |	Fatal error. (Do you have the correct sensor plugged in?). |
-| Buffer Overflow |	LED3 (YELLOW) on for 5 seconds	| Processing is not able to keep up with real-time; data buffer has been reset. |
-
 # Usage with the MPLAB Data Visualizer and Machine Learning Plugins
 This project can be used to generate a firmware for streaming data to the [MPLAB Data Visualizer plugin](https://www.microchip.com/en-us/development-tools-tools-and-software/embedded-software-center/mplab-data-visualizer).  Once the firmware is flashed, follow the steps below to set up Data Visualizer.
 
@@ -77,19 +69,19 @@ This project can be used to generate a firmware for streaming data to the [MPLAB
 | :--: |
 | *Loading the workspace file* |
 
-3. Next, select the Serial/CDC Connection that corresponds to the Curiosity board, and adjust the baud rate to 38400.
+3. Next, select the Serial/CDC Connection that corresponds to the Curiosity board, and adjust the baud rate to 115200.
 
 | ![configure serial port](images/dv-baud.png) |
 | :--: |
-| *Configuring the dSPIC33CK serial port* |
+| *Configuring the PIC33CX-BZ2 and WBZ451 serial port* |
 
-4. Use the play button on the Serial/CDC Connection to connect to the serial port. Once the connection is made, the dSPIC33CK will be available for use with the variable streamer.
+4. Use the play button on the Serial/CDC Connection to connect to the serial port. Once the connection is made, the PIC33CX-BZ2 and WBZ451 will be available for use with the variable streamer.
 
 | ![start stream](images/dv-play-button.png) |
 | :--: |
 | *Start Streaming* |
 
-5. Switch to the *Variable Streamers* tab and select the aforementioned Serial/CDC Connection from the drop-down menu as the input data source for the IMU variable streamer (see image below for reference); this will enable parsing of the dSPIC33CK data stream. You may delete or add variables here if your sensor configuration differs from the pre-loaded ones.
+5. Switch to the *Variable Streamers* tab and select the aforementioned Serial/CDC Connection from the drop-down menu as the input data source for the IMU variable streamer (see image below for reference); this will enable parsing of the PIC33CX-BZ2 and WBZ451 data stream. You may delete or add variables here if your sensor configuration differs from the pre-loaded ones.
 
 | ![data source](images/dv-ds-var-selection.png) |
 | :--: |
