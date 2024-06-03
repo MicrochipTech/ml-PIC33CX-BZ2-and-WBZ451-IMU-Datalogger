@@ -21,7 +21,7 @@ This repository contains firmware for streaming up to 3-axes IMU data over UART 
 
 ## Software Used
 * [MPLAB® X IDE](https://microchip.com/mplab/mplab-x-ide)
-* [MPLAB® XC16 compiler](https://microchip.com/mplab/compilers)
+* [MPLAB® XC32 compiler](https://microchip.com/mplab/compilers)
 * [MPLAB® Code Configurator](https://www.microchip.com/mcc)
 * [MPLAB® Data Visualizer](https://www.microchip.com/en-us/tools-resources/debug/mplab-data-visualizer)
 
