@@ -57,7 +57,7 @@ The steps below explain the process of configuring the data logger firmware buil
 # Firmware Operation
 The data streamer firmware will output sensor data over the UART port with the following UART settings:
 
-* Baudrate 152000
+* Baudrate 115200
 * Data bits 8
 * Stop bits 1
 * Parity None
