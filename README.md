@@ -1,4 +1,4 @@
-# ml-wbz451-IMU-Datalogger
+# ml-wbz451-IMU-datalogger
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/microchip_logo_white_red.png">
 	<source media="(prefers-color-scheme: light)" srcset="images/microchip_logo_black_red.png">
@@ -25,23 +25,20 @@ This repository contains firmware for streaming up to 3-axes IMU data over UART 
 * [MPLAB® Code Configurator](https://www.microchip.com/mcc)
 * [MPLAB® Data Visualizer](https://www.microchip.com/en-us/tools-resources/debug/mplab-data-visualizer)
 
-## Related Documentation
-* dSPIC33CK [Product Family Page](https://www.microchip.com/en-us/product/dsPIC33CK256MP508)
-
 
 ## How to Configure, Compile, and Flash
-The steps below explain the process of configuring the data logger firmware build, compiling it, and flashing it to the dSPIC33CK device.
+The steps below explain the process of configuring the data logger firmware build, compiling it, and flashing it to the PIC32CX-BZ2 and WBZ451 device.
 
-1. Plug the dSPIC33CK Curiosity Board into your PC via USB.
-2. Install the MPLAB X IDE and XC16 compiler. These are required to load the data logger project and to program the dSPIC33CK Curiosity Board.
-3. Open the `dspic33ck-curiosity-imu-data-logger.X` project folder in MPLAB X.
+1. Plug the PIC32CX-BZ2 and WBZ451 Curiosity Development Board into your PC via USB.
+2. Install the MPLAB X IDE and XC32 compiler. These are required to load the data logger project and to program the PIC32CX-BZ2 and WBZ451 Curiosity Development Board.
+3. Open the `ml-wbz451-imu-data-logger.X` project folder in MPLAB X.
 4. Select the appropriate MPLAB X Project Configuration for your sensor according to the table below.
    | Sensor Type | MPLAB X Project Configuration Selection |
    | --- | --- |
    | Bosch BMI160 IMU | `SNSR_TYPE_BMI160` |
    | TDK ICM42688 IMU | `SNSR_TYPE_ICM42688` |
 
- Project configuration can be set in the MPLAB X toolbar drop down menu as shown in the image below
+ Project configuration can be set in the MPLAB X toolbar drop-down menu as shown in the image below
 
    | ![project config](images/project-configuration.png) |
    | :--: |
